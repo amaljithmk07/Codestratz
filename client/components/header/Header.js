@@ -443,7 +443,7 @@ const Header = () => {
           <div className={style.header_main_list_section}>
             <ul className={style.header_main_ul_sec}>
               {mainHeader.map((header, index) => (
-                <li
+                <li key={index}
                   className={`${style.header_main_ul_li_sec} ${dropdownstate === index
                     ? `${style.header_main_ul_li_sec_active}`
                     : ""
@@ -481,7 +481,7 @@ const Header = () => {
               }`}
           >
             {header_nav1.map((data) => (
-              <li
+              <li key={index}
                 className={style.header_main_dropdown_card}
                 style={
                   data.background && {
@@ -497,7 +497,7 @@ const Header = () => {
                 </div>
                 <ul className={style.header_main_dropdown_card_ul_sec}>
                   {data.sub_list.map((sublist) => (
-                    <li>
+                    <li key={index}>
                       <Link href={sublist.Link}> {sublist.title}
 
 
@@ -526,7 +526,7 @@ const Header = () => {
               }`}
           >
             {header_nav2.map((data) => (
-              <li className={style.header_main_dropdown_card}>
+              <li className={style.header_main_dropdown_card} key={index}>
                 <div className={style.header_main_dropdown_card_head}>
                   <h4>{data.head}</h4>
                   <div className={style.header_main_dropdown_card_head_logo}>
@@ -535,7 +535,7 @@ const Header = () => {
                 </div>
                 <ul className={style.header_main_dropdown_card_ul_sec}>
                   {data.sub_list.map((sublist) => (
-                    <li>
+                    <li key={index}>
                       <Link href={sublist.Link}> {sublist.title}
 
 
