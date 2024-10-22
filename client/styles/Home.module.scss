@@ -1,0 +1,298 @@
+@import "variable";
+
+.home_banner_section {
+    width: 100%;
+    background-color: #083a74;
+
+    .home_banner_container {
+        width: 100%;
+        display: flex;
+
+        .home_banner_left_sec {
+            width: 50%;
+
+            h3 {
+                color: #6adfd7;
+                font-weight: 900;
+                font-size: 18px;
+                line-height: 24px;
+                letter-spacing: 0.16px;
+                text-transform: uppercase;
+            }
+
+            h2 {
+                padding-top: 30px;
+                color: #fff;
+                font-size: 60px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 78px;
+                letter-spacing: -2.592px;
+            }
+
+            p {
+                padding-top: 30px;
+
+                color: #fff;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 35px;
+                margin-bottom: 40px;
+            }
+
+            .home_banner_left_input_sec {
+                overflow: hidden;
+                display: flex;
+
+                input {
+                    display: block;
+                    padding: 10px 3%;
+                    border: 0;
+                    width: 50%;
+                    color: #333333;
+                    font-size: 21px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 35px;
+                    border-top-left-radius: 5px;
+                    border-bottom-left-radius: 5px;
+
+                    &::placeholder {
+                        color: #c2c2c2;
+
+                        font-weight: 500;
+                    }
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                .home_banner_left_input_btn {
+                    padding: 10px 5%;
+                    display: block;
+                    border-top-right-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                    border: 0;
+                    background-color: $button_color;
+                    color: #ffffff;
+                    font-size: 21px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 35px;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
+
+        .home_banner_right_sec {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            .home_banner_right_img {
+                width: 70%;
+            }
+
+            .home_banner_right_play_btn {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                margin: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+
+                .home_banner_right_play_btn_icon {
+                    width: 30px;
+                    margin-left: 3px;
+
+                    img {
+                        filter: invert(1);
+                    }
+                }
+
+                &:hover {
+                    border: 2px solid #0056b852;
+                }
+
+                &::before {
+                    z-index: -1;
+                    content: "";
+                    position: absolute;
+                    background: radial-gradient(rgba(0, 212, 255, 0) 55%,
+                            rgba(5, 104, 184, 1) 55%);
+                    border-radius: 50%;
+
+                    top: 50%;
+                    transform: translateY(-50%);
+                    margin: auto;
+
+                    animation: playbtnEffect 03s ease-in-out infinite;
+
+                    @keyframes playbtnEffect {
+
+                        0%,
+                        100% {
+                            width: 70%;
+                            height: 70%;
+                        }
+
+                        50% {
+                            width: 140%;
+                            height: 140%;
+                            opacity: 0;
+                        }
+                    }
+                }
+
+                &::after {
+                    z-index: -1;
+                    content: "";
+                    position: absolute;
+                    background-color: $button_color;
+                    border-radius: 50%;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                }
+
+                &:hover::after {
+                    background-color: #0056b852;
+                }
+            }
+        }
+    }
+}
+
+// ===================
+.entire_tab_section {
+    // ===================
+
+    .how_we_drive_revenue_section {
+        width: 100%;
+
+        .how_we_drive_revenue_container {
+            width: 100%;
+
+            h3 {
+                font-size: 72px;
+                line-height: 78px;
+                width: 100%;
+                justify-content: center;
+                text-align: center;
+                margin-bottom: 30px;
+                display: flex;
+
+                span {
+                    color: $button_color;
+                }
+            }
+
+            p {
+                margin-bottom: 70px;
+                font-size: 21px;
+                font-weight: 400;
+                line-height: 35px;
+                text-align: center;
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .how_we_drive_revenue_content_sec {
+                width: 90%;
+                margin: auto;
+                position: relative;
+
+                .how_we_drive_revenue_funnel_img {
+                    position: absolute;
+                    left: -17%;
+                    top: 0%;
+                    z-index: 5;
+                    height: auto;
+                    width: 20%;
+                }
+
+                .how_we_drive_revenue_content_data {
+                    display: flex;
+                    padding: 45px 0;
+                    align-items: center;
+                    position: relative;
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        width: 150%;
+                        right: 0;
+                        bottom: 0;
+                    }
+
+                    &:nth-child(2)::after {
+                        border-bottom: 2px solid rgb(0, 238, 255);
+                    }
+
+                    &:nth-child(3)::after {
+                        border-bottom: 2px solid rgb(0, 255, 106);
+                    }
+
+                    &:nth-child(4)::after {
+                        border-bottom: 2px solid rgb(238, 255, 0);
+                    }
+
+                    &:nth-child(5)::after {
+                        border-bottom: 2px solid rgb(255, 193, 112);
+                    }
+
+                    h4 {
+                        font-size: 25px;
+                        line-height: 34px;
+                        width: 33%;
+                        box-sizing: border-box;
+                        padding-right: 5%;
+                        text-align: end;
+                    }
+
+                    ul {
+                        width: 33%;
+
+                        li {
+                            display: block;
+
+                            a {
+                                font-size: 21px;
+                                line-height: 28px;
+                                display: inline-flex;
+                                align-items: center;
+                                padding-bottom: 10px;
+                                padding-right: 20px;
+
+                                .how_we_drive_list_arrow_icon {
+                                    height: auto;
+                                    width: 15px;
+                                    margin-left: 10px;
+                                }
+
+                                &:hover {
+                                    color: $button_color;
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

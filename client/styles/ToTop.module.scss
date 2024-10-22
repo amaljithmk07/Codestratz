@@ -1,0 +1,26 @@
+.to_top_btn {
+    position: fixed;
+    top: 550px;
+    /* Middle of the screen vertically */
+    right: 30px;
+    /* Fixed on the right side */
+    z-index: 99;
+    /* Make sure it stays above other content */
+    border: none;
+    outline: none;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+    display: none;
+    /* Initially hidden */
+    /* Center the button vertically */
+}
+
+.to_top_btn:hover {
+    background-color: #ddd;
+    /* Change background on hover */
+}
