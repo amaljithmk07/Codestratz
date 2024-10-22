@@ -481,7 +481,7 @@ const Header = () => {
             className={`${style.header_main_dropdown_sec} ${dropdownstate === 0 ? `${style.header_main_dropdown_sec_visible}` : ""
               }`}
           >
-            {header_nav1.map((data) => (
+            {header_nav1.map((data, index) => (
               <li key={index}
                 className={style.header_main_dropdown_card}
                 style={
@@ -497,7 +497,7 @@ const Header = () => {
                   </div>
                 </div>
                 <ul className={style.header_main_dropdown_card_ul_sec}>
-                  {data.sub_list.map((sublist) => (
+                  {data.sub_list.map((sublist,index) => (
                     <li key={index}>
                       <Link href={sublist.Link}> {sublist.title}
 
@@ -526,7 +526,7 @@ const Header = () => {
             className={`${style.header_main_dropdown_sec} ${dropdownstate === 1 ? `${style.header_main_dropdown_sec_visible}` : ""
               }`}
           >
-            {header_nav2.map((data) => (
+            {header_nav2.map((data,index) => (
               <li className={style.header_main_dropdown_card} key={index}>
                 <div className={style.header_main_dropdown_card_head}>
                   <h4>{data.head}</h4>
@@ -535,7 +535,7 @@ const Header = () => {
                   </div>
                 </div>
                 <ul className={style.header_main_dropdown_card_ul_sec}>
-                  {data.sub_list.map((sublist) => (
+                  {data.sub_list.map((sublist,index) => (
                     <li key={index}>
                       <Link href={sublist.Link}> {sublist.title}
 
