@@ -109,10 +109,6 @@ const Index = () => {
   ];
   const [uncoverTabs, setUncoverTabs] = useState(0);
 
-  const TabsChanger = (index) => {
-    setUncoverTabs(index);
-  };
-  console.log(uncoverTheimpactTabs[uncoverTabs]);
 
   // ===================Uncover The Impact==============
 
@@ -157,6 +153,12 @@ const Index = () => {
         "By connecting the dots between your various marketing activities or channels and actual sales, you can confidently invest more in successful strategies and improve underperforming ones.",
     },
   ];
+
+
+  const TabsChanger = (index) => {
+    setUncoverTabs(index);
+  };
+  console.log(uncoverTheimpactTabs[uncoverTabs]);
 
 
   return (
