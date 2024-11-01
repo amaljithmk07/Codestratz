@@ -109,7 +109,6 @@ const Index = () => {
   ];
   const [uncoverTabs, setUncoverTabs] = useState(0);
 
-
   // ===================Uncover The Impact==============
 
   const uncoverTheimpactTabs = [
@@ -154,12 +153,10 @@ const Index = () => {
     },
   ];
 
-
   const TabsChanger = (index) => {
     setUncoverTabs(index);
   };
   console.log(uncoverTheimpactTabs[uncoverTabs]);
-
 
   return (
     <div>
@@ -396,12 +393,12 @@ const Index = () => {
 
         {/* ============== Unmatched Expertise ============= */}
 
-        <section className={`${home.unmatched_expertise_section} ${common.pt_50}  ${common.pb_100}  ${common.wrap} `}>
-
-
-          <div className={`${home.unmatched_expertise_container} ${common.wrap} `}>
-
-
+        <section
+          className={`${home.unmatched_expertise_section} ${common.pt_50}  ${common.pb_100}  ${common.wrap} `}
+        >
+          <div
+            className={`${home.unmatched_expertise_container} ${common.wrap} `}
+          >
             <h3>Unmatched Expertise Driving Results</h3>
 
             <div className={home.unmatched_expertise_content_section}>
@@ -418,18 +415,66 @@ const Index = () => {
                   <span>Industry SMEs</span>
                   <p>stay up to date and join business reviews.</p>
                 </li>
-                <li>
-                  <span>Industry SMEs</span>
-                  <p>stay up to date and join business reviews.</p>
-                </li>
                 <li className={home.unmatched_expertise_left_list_section}>
-                  <Link href={""} >
-                    About Us</Link>
-                  <Link href={""} >
-                    About Us</Link>
-                  <Link href={""} >
-                    About Us</Link>
+                  <Link href={""}>About Us</Link>
+                  <Link href={""}>About Us</Link>
+                  <Link href={""}>About Us</Link>
                 </li>{" "}
+              </ul>
+
+              <ul className={home.unmatched_expertise_right_section}>
+                <li className={home.unmatched_expertise_right_li}>
+                  <div className={home.unmatched_expertise_right_person_img}>
+                    <DynamicImage src={'/images/person1.webp'} />
+                  </div>
+
+                  <span>28-year</span>
+                  <p>track record</p>
+                </li>
+                <li className={home.unmatched_expertise_right_li}>                  <div className={home.unmatched_expertise_right_person_img}>
+                    <DynamicImage src={'/images/person2.webp'} />
+                  </div>
+                  <span>1,000s </span>
+                  <p>of reviews</p>
+                </li>
+                <li className={home.unmatched_expertise_right_li}>                  <div className={home.unmatched_expertise_right_person_img}>
+                    <DynamicImage src={'/images/person3.webp'} />
+                  </div>
+                  <span>7 million+</span>
+                  <p>calls generated </p>
+                </li>
+                <li className={home.unmatched_expertise_right_li}>                  <div className={home.unmatched_expertise_right_person_img}>
+                    <DynamicImage src={'/images/person4.webp'} />
+                  </div>
+                  <span>500+</span>
+                  <p>digital experts</p>
+                </li>
+
+
+                <li className={home.unmatched_expertise_right_li}>                  <h5>In-house technology</h5>
+
+                  <ul className={home.unmatched_expertise_right_logo_section}>
+
+                    <li className={home.unmatched_expertise_right_logo}>
+                      <DynamicImage src={'/images/unmatched-logo1.webp'} />
+
+                    </li>
+                    <li className={home.unmatched_expertise_right_logo}>
+                      <DynamicImage src={'/images/unmatched-logo2.webp'} />
+
+                    </li>
+                    <li className={home.unmatched_expertise_right_logo}>
+                      <DynamicImage src={'/images/unmatched-logo3.webp'} />
+
+                    </li>
+                    <li className={home.unmatched_expertise_right_logo}>
+                      <DynamicImage src={'/images/unmatched-logo4.png'} />
+
+                    </li>
+                  </ul>
+                </li>
+
+
               </ul>
             </div>
           </div>

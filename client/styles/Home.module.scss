@@ -448,7 +448,6 @@
         width: 100%;
 
         .unmatched_expertise_container {
-
             margin: auto;
             width: 90%;
 
@@ -469,7 +468,7 @@
                     width: 50%;
 
                     li {
-                        padding: 30px 5% 30px 0;
+                        padding: 16px 5% 16px 0;
 
                         span {
                             font-size: 30px;
@@ -492,6 +491,99 @@
                             font-size: 20px;
                             font-weight: 600;
                             color: #207de9;
+                        }
+                    }
+                }
+
+                .unmatched_expertise_right_section {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: start;
+                    margin: -10px;
+                    width: 50%;
+
+                    .unmatched_expertise_right_li {
+                        overflow: hidden;
+                        width: 100%;
+                        border-radius: 15px;
+                        margin: 10px;
+                        padding: 20px 5%;
+                        box-sizing: border-box;
+                        position: relative;
+                        display: inline-block;
+                        background-color: #7ab8ff2f;
+
+                        &:nth-child(1),
+                        &:nth-child(2),
+                        &:nth-child(3),
+                        &:nth-child(4) {
+                            width: calc(50% - 20px);
+                        }
+
+                        &:nth-child(1) {
+                            background-color: #ff7dd831;
+                        }
+
+                        &:nth-child(2) {
+                            background-color: #ffed8933;
+                        }
+
+                        &:nth-child(3) {
+                            background-color: #80ffce38;
+                        }
+
+                        &:nth-child(4) {
+                            background-color: #ff7c7c2d;
+                        }
+
+                        .unmatched_expertise_right_person_img {
+                            position: absolute;
+                            bottom: 0;
+                            right: 0;
+                            width: 100px;
+                            height: auto;
+                        }
+
+                        span {
+                            font-size: 32px;
+                            font-style: normal;
+                            font-weight: 800;
+                            line-height: 40px;
+                            color: #333333;
+                        }
+
+                        p {
+                            text-transform: capitalize;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 600;
+                            color: #575757;
+                        }
+
+                        h5 {
+                            font-size: 20px;
+                            font-weight: 800;
+                            line-height: 40px;
+                            color: #333333;
+                            text-align: center;
+                        }
+
+                        .unmatched_expertise_right_logo_section {
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+
+                            .unmatched_expertise_right_logo {
+                                max-width: 25%;
+                                background-color: unset;
+                                padding: unset;
+                                padding: 10px;
+
+                                img {
+                                    display: block;
+                                    object-fit: contain;
+                                }
+                            }
                         }
                     }
                 }
