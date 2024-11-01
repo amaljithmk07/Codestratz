@@ -136,6 +136,9 @@ const footer = () => {
   return (
     <div className={style.footer_main_body}>
       <div className={`${style.footer_container} ${common.wrap}`}>
+
+        {/* ==================== */}
+
         <div className={style.footer_top_body}>
           <ul className={style.footer_top_left}>
             <li className={style.footer_top_left_list}>
@@ -170,6 +173,9 @@ const footer = () => {
           </div>
         </div>
 
+
+        {/* ==================== */}
+
         <div className={style.footer_content_body}>
           <div className={style.footer_content_logo_sec}>
             <div className={style.footer_content_logo}>
@@ -183,14 +189,14 @@ const footer = () => {
           </div>
 
           <ul className={style.footer_content_menu_list_sec}>
-            {footerData.map((data) => (
-              <li>
+            {footerData.map((data, index) => (
+              <li key={index}>
                 <ul className={style.footer_content_menu_list}>
                   <li>
                     <h4>{data.title}</h4>
                   </li>
-                  {data.subList.map((list) => (
-                    <li>
+                  {data.subList.map((list, index) => (
+                    <li key={index}>
                       <Link href={list.link}>{list.linkTitle}</Link>
                     </li>
                   ))}
@@ -199,6 +205,9 @@ const footer = () => {
             ))}
           </ul>
         </div>
+
+
+        {/* ==================== */}
 
         <div className={style.footer_bottom_body}>
           <div className={style.footer_bottom_left_body}>

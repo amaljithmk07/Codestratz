@@ -6,7 +6,7 @@ import Link from "next/link";
 import DynamicImage from "@/components/DynamicImage";
 // https://www.webfx.com/
 
-const index = () => {
+const Index = () => {
   // ==========How We Drive Revenue===============
 
   const howWeDriveContent = [
@@ -107,6 +107,12 @@ const index = () => {
       ],
     },
   ];
+  const [uncoverTabs, setUncoverTabs] = useState(0);
+
+  const TabsChanger = (index) => {
+    setUncoverTabs(index);
+  };
+  console.log(uncoverTheimpactTabs[uncoverTabs]);
 
   // ===================Uncover The Impact==============
 
@@ -152,12 +158,6 @@ const index = () => {
     },
   ];
 
-  const [uncoverTabs, setUncoverTabs] = useState(0);
-
-  const TabsChanger = (index) => {
-    setUncoverTabs(index);
-  };
-  console.log(uncoverTheimpactTabs[uncoverTabs]);
 
   return (
     <div>
@@ -437,4 +437,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;
