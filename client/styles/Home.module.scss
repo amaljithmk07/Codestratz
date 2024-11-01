@@ -81,9 +81,14 @@
                     font-style: normal;
                     font-weight: 600;
                     line-height: 35px;
+                    cursor: pointer;
 
                     &:focus {
                         outline: none;
+                    }
+
+                    &:hover {
+                        background-color: $button_hover;
                     }
                 }
             }
@@ -166,10 +171,12 @@
                     height: 100%;
                     top: 0;
                     left: 0;
+                    transition: all 0.5s ease;
                 }
 
                 &:hover::after {
                     background-color: #0056b852;
+                    opacity: 0;
                 }
             }
         }
@@ -289,6 +296,202 @@
                                     text-decoration: underline;
                                 }
                             }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .uncover_the_impact_section {
+        .uncover_the_impact_container {
+            h3 {
+                font-size: 48px;
+                color: black;
+                text-align: center;
+            }
+
+            p {
+                text-align: center;
+                margin: auto;
+                width: 80%;
+                letter-spacing: -0.005em;
+                margin-top: 0;
+                margin-bottom: 24px;
+                font-size: 21px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 35px;
+            }
+
+            .uncover_the_impact_sub_head {
+                color: #207de9;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                text-align: center;
+                line-height: 32px;
+                display: block;
+            }
+
+            .uncover_the_impact_counter_sec {
+                display: flex;
+
+                li {
+                    width: 25%;
+                    text-align: center;
+
+                    h4 {
+                        font-size: 48px;
+                        color: #6adfd7;
+
+                        span {
+                            color: #222;
+                            font-size: 14px;
+                            font-weight: 600;
+                            line-height: 22px;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+
+            .uncover_the_impact_tab_sec {
+                display: flex;
+                width: 90%;
+                align-items: flex-start;
+                padding-top: 200px;
+                margin: auto;
+
+                .uncover_the_impact_tab_left_sec {
+                    width: 35%;
+                    margin: -10px auto;
+                    margin-right: 5%;
+
+                    .uncover_the_impact_tab_body {
+                        align-items: center;
+                        display: flex;
+                        color: black;
+                        box-sizing: border-box;
+                        padding: 20px 5%;
+                        margin: 10px 0;
+                        border-radius: 10px;
+                        background-color: #ffffff;
+                        cursor: pointer;
+                        transition: all 0.3s ease;
+
+                        .uncover_the_impact_tab_left_icon {
+                            height: auto;
+                            width: 50px;
+
+                            object-fit: cover;
+
+                            margin-right: 5%;
+                        }
+
+                        h4 {
+                            font-size: 24px;
+                            font-weight: 600;
+                            font-style: normal;
+                            line-height: 32px;
+                        }
+
+                        &:hover {
+                            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.281);
+                        }
+
+                        &.active {
+                            color: #207de9;
+                            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.13);
+                        }
+                    }
+                }
+
+                .uncover_the_impact_tab_right_sec {
+                    position: relative;
+                    width: 60%;
+                    border-radius: 20px;
+                    background-color: #083a74;
+                    padding: 150px 5% 50px 5%;
+                    transition: all 0.3s ease;
+
+                    h4 {
+                        color: white;
+                        font-size: 24px;
+                        font-weight: 600;
+                        font-style: normal;
+                        line-height: 32px;
+                        text-align: center;
+                        padding-bottom: 30px;
+                    }
+
+                    p {
+                        color: white;
+
+                        text-align: left;
+                        width: 100%;
+                    }
+
+                    .uncover_the_impact_tab_right_top_img {
+                        position: absolute;
+                        top: -150px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+
+    .unmatched_expertise_section {
+        width: 100%;
+
+        .unmatched_expertise_container {
+
+            margin: auto;
+            width: 90%;
+
+            h3 {
+                font-weight: 700;
+                font-size: 45px;
+                margin: auto;
+                width: fit-content;
+                display: block;
+            }
+
+            .unmatched_expertise_content_section {
+                display: flex;
+                width: 100%;
+                padding-top: 70px;
+
+                .unmatched_expertise_left_section {
+                    width: 50%;
+
+                    li {
+                        padding: 30px 5% 30px 0;
+
+                        span {
+                            font-size: 30px;
+                            font-weight: 800;
+                            line-height: 40px;
+                        }
+
+                        p {
+                            padding-top: 10px;
+                            font-size: 21px;
+                            font-weight: 500;
+                        }
+                    }
+
+                    .unmatched_expertise_left_list_section {
+                        display: flex;
+                        gap: 20px;
+
+                        a {
+                            font-size: 20px;
+                            font-weight: 600;
+                            color: #207de9;
                         }
                     }
                 }

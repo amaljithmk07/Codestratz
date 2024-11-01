@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Head from "next/head";
 import Header from "@/components/header/Header";
+import Footer from "@/components/footer/footer";
 import common from "@/styles/common.module.scss";
 import localFont from "next/font/local"; // Import localFont
 
@@ -62,6 +63,7 @@ export default function RootLayout({ children }) {
       >
         {children}
       </main>
+      <Footer />
     </React.Fragment>
   );
 }

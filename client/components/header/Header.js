@@ -443,18 +443,21 @@ const Header = () => {
           <div className={style.header_main_list_section}>
             <ul className={style.header_main_ul_sec}>
               {mainHeader.map((header, index) => (
-                <li key={index}
-                  className={`${style.header_main_ul_li_sec} ${dropdownstate === index
-                    ? `${style.header_main_ul_li_sec_active}`
-                    : ""
-                    }
+                <li
+                  key={index}
+                  className={`${style.header_main_ul_li_sec} ${
+                    dropdownstate === index
+                      ? `${style.header_main_ul_li_sec_active}`
+                      : ""
+                  }
                   `}
                   onClick={() => DropdownHandler(index)}
                 >
                   {header}
                   <div
-                    className={`${style.header_main_list_down_arrow} ${dropdownstate === index ? `${style.active}` : ""
-                      }`}
+                    className={`${style.header_main_list_down_arrow} ${
+                      dropdownstate === index ? `${style.active}` : ""
+                    }`}
                   >
                     <Image
                       src={"/images/header/down-arrow.png"}
@@ -478,11 +481,15 @@ const Header = () => {
 
           {/* ======dropdown1========= */}
           <ul
-            className={`${style.header_main_dropdown_sec} ${dropdownstate === 0 ? `${style.header_main_dropdown_sec_visible}` : ""
-              }`}
+            className={`${style.header_main_dropdown_sec} ${
+              dropdownstate === 0
+                ? `${style.header_main_dropdown_sec_visible}`
+                : ""
+            }`}
           >
             {header_nav1.map((data, index) => (
-              <li key={index}
+              <li
+                key={index}
                 className={style.header_main_dropdown_card}
                 style={
                   data.background && {
@@ -497,24 +504,24 @@ const Header = () => {
                   </div>
                 </div>
                 <ul className={style.header_main_dropdown_card_ul_sec}>
-                  {data.sub_list.map((sublist,index) => (
+                  {data.sub_list.map((sublist, index) => (
                     <li key={index}>
-                      <Link href={sublist.Link}> {sublist.title}
-
-
-
-
-
-
-
-                        <div className={style.header_main_dropdown_card_li_arrow_icon}>
+                      <Link href={sublist.Link}>
+                        {" "}
+                        {sublist.title}
+                        <div
+                          className={
+                            style.header_main_dropdown_card_li_arrow_icon
+                          }
+                        >
                           <Image
                             src={"/images/right-arrow.png"}
                             height={100}
                             width={100}
                             alt=""
                           />
-                        </div> </Link>
+                        </div>{" "}
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -523,10 +530,13 @@ const Header = () => {
           </ul>
           {/* ======dropdown2========= */}
           <ul
-            className={`${style.header_main_dropdown_sec} ${dropdownstate === 1 ? `${style.header_main_dropdown_sec_visible}` : ""
-              }`}
+            className={`${style.header_main_dropdown_sec} ${
+              dropdownstate === 1
+                ? `${style.header_main_dropdown_sec_visible}`
+                : ""
+            }`}
           >
-            {header_nav2.map((data,index) => (
+            {header_nav2.map((data, index) => (
               <li className={style.header_main_dropdown_card} key={index}>
                 <div className={style.header_main_dropdown_card_head}>
                   <h4>{data.head}</h4>
@@ -535,13 +545,16 @@ const Header = () => {
                   </div>
                 </div>
                 <ul className={style.header_main_dropdown_card_ul_sec}>
-                  {data.sub_list.map((sublist,index) => (
+                  {data.sub_list.map((sublist, index) => (
                     <li key={index}>
-                      <Link href={sublist.Link}> {sublist.title}
-
-
-
-                        <div className={style.header_main_dropdown_card_li_arrow_icon}>
+                      <Link href={sublist.Link}>
+                        {" "}
+                        {sublist.title}
+                        <div
+                          className={
+                            style.header_main_dropdown_card_li_arrow_icon
+                          }
+                        >
                           <Image
                             src={"/images/right-arrow.png"}
                             height={100}
@@ -550,7 +563,6 @@ const Header = () => {
                           />
                         </div>
                       </Link>
-
                     </li>
                   ))}
                 </ul>
