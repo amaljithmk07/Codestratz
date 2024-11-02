@@ -394,12 +394,12 @@ const Index = () => {
         {/* ============== Unmatched Expertise ============= */}
 
         <section
-          className={`${home.unmatched_expertise_section} ${common.pt_50}  ${common.pb_100}  ${common.wrap} `}
+          className={`${home.unmatched_expertise_section} ${common.pt_50}  ${common.pb_100}  ${common.wrap}  `}
         >
-          <div
-            className={`${home.unmatched_expertise_container} ${common.wrap} `}
-          >
-            <h3>Unmatched Expertise Driving Results</h3>
+          <div className={`${home.unmatched_expertise_container}  `}>
+            <h3>
+              Unmatched Expertise <span> Driving Results</span>
+            </h3>
 
             <div className={home.unmatched_expertise_content_section}>
               <ul className={home.unmatched_expertise_left_section}>
@@ -425,57 +425,113 @@ const Index = () => {
               <ul className={home.unmatched_expertise_right_section}>
                 <li className={home.unmatched_expertise_right_li}>
                   <div className={home.unmatched_expertise_right_person_img}>
-                    <DynamicImage src={'/images/person1.webp'} />
+                    <DynamicImage src={"/images/person1.webp"} />
                   </div>
 
                   <span>28-year</span>
                   <p>track record</p>
                 </li>
-                <li className={home.unmatched_expertise_right_li}>                  <div className={home.unmatched_expertise_right_person_img}>
-                    <DynamicImage src={'/images/person2.webp'} />
+                <li className={home.unmatched_expertise_right_li}>
+                  {" "}
+                  <div className={home.unmatched_expertise_right_person_img}>
+                    <DynamicImage src={"/images/person2.webp"} />
                   </div>
                   <span>1,000s </span>
                   <p>of reviews</p>
                 </li>
-                <li className={home.unmatched_expertise_right_li}>                  <div className={home.unmatched_expertise_right_person_img}>
-                    <DynamicImage src={'/images/person3.webp'} />
+                <li className={home.unmatched_expertise_right_li}>
+                  {" "}
+                  <div className={home.unmatched_expertise_right_person_img}>
+                    <DynamicImage src={"/images/person3.webp"} />
                   </div>
                   <span>7 million+</span>
                   <p>calls generated </p>
                 </li>
-                <li className={home.unmatched_expertise_right_li}>                  <div className={home.unmatched_expertise_right_person_img}>
-                    <DynamicImage src={'/images/person4.webp'} />
+                <li className={home.unmatched_expertise_right_li}>
+                  {" "}
+                  <div className={home.unmatched_expertise_right_person_img}>
+                    <DynamicImage src={"/images/person4.webp"} />
                   </div>
                   <span>500+</span>
                   <p>digital experts</p>
                 </li>
 
-
-                <li className={home.unmatched_expertise_right_li}>                  <h5>In-house technology</h5>
-
+                <li className={home.unmatched_expertise_right_li}>
+                  {" "}
+                  <h5>In-house technology</h5>
                   <ul className={home.unmatched_expertise_right_logo_section}>
-
                     <li className={home.unmatched_expertise_right_logo}>
-                      <DynamicImage src={'/images/unmatched-logo1.webp'} />
-
+                      <DynamicImage src={"/images/unmatched-logo1.webp"} />
                     </li>
                     <li className={home.unmatched_expertise_right_logo}>
-                      <DynamicImage src={'/images/unmatched-logo2.webp'} />
-
+                      <DynamicImage src={"/images/unmatched-logo2.webp"} />
                     </li>
                     <li className={home.unmatched_expertise_right_logo}>
-                      <DynamicImage src={'/images/unmatched-logo3.webp'} />
-
+                      <DynamicImage src={"/images/unmatched-logo3.webp"} />
                     </li>
                     <li className={home.unmatched_expertise_right_logo}>
-                      <DynamicImage src={'/images/unmatched-logo4.png'} />
-
+                      <DynamicImage src={"/images/unmatched-logo4.png"} />
                     </li>
                   </ul>
                 </li>
-
-
               </ul>
+            </div>
+          </div>
+        </section>
+
+        {/* ============== Revenue & Beyond ================== */}
+
+        <section
+          className={` ${home.revenue_and_beyond_section} ${common.pt_50}  ${common.pb_100}   `}
+        >
+          <div
+            className={`${home.revenue_and_beyond_container} ${common.wrap} `}
+          >
+            <div className={`${home.revenue_and_beyond_title_sec}  `}>
+              <h3>
+                Revenue & Beyond: <span> Proven Results</span> For Clients
+              </h3>
+              <p>
+                See how WebFX improves the KPIs that drive actual business
+                growth.
+              </p>
+            </div>
+
+            <div className={`${home.revenue_and_beyond_swiper_sec}  `}>
+              <div className={`${home.revenue_and_beyond_swiper_card}  `}>
+                <div
+                  className={`${home.revenue_and_beyond_swiper_card_notation}  `}
+                >
+                  Franchise
+                </div>
+
+                <div
+                  className={`${home.revenue_and_beyond_swiper_card_top_sec}  `}
+                >
+                  <h4>Challenge</h4>
+                  <p>
+                    MarketingCloudFX simplifies your decision-making by clearly
+                    showing
+                  </p>
+                  <h4>Approach</h4>
+                  <ul
+                    className={`${home.revenue_and_beyond_swiper_card_top_ul}  `}
+                  >
+                    <li>planning towards business goals.</li>
+                    <li>planning towards business goals.</li>
+                    <li>planning towards business goals.</li>
+                    <li>planning towards business goals.</li>
+                  </ul>
+                </div>
+
+                <div
+                  className={`${home.revenue_and_beyond_swiper_card_bottom_sec}  `}
+                >
+                  <span>150%</span>
+                  <p>proactive ideas</p>
+                  <Link href={"/"}> View Case Study</Link>
+                </div>
+              </div>
             </div>
           </div>
         </section>

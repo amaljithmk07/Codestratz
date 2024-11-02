@@ -456,7 +456,12 @@
                 font-size: 45px;
                 margin: auto;
                 width: fit-content;
+                color: black;
                 display: block;
+
+                span {
+                    color: #207de9;
+                }
             }
 
             .unmatched_expertise_content_section {
@@ -584,6 +589,127 @@
                                     object-fit: contain;
                                 }
                             }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .revenue_and_beyond_section {
+        width: 100%;
+
+        .revenue_and_beyond_container {
+            width: 100%;
+
+            .revenue_and_beyond_title_sec {
+                width: 100%;
+                text-align: center;
+
+                h3 {
+                    font-weight: 700;
+                    font-size: 45px;
+                    margin: auto;
+                    width: fit-content;
+                    color: black;
+                    display: block;
+
+                    span {
+                        color: #207de9;
+                    }
+                }
+
+                p {
+                    margin-top: 20px;
+                    font-size: 21px;
+                    font-style: normal;
+                }
+            }
+
+            .revenue_and_beyond_swiper_sec {
+                width: 80%;
+                margin: auto;
+                padding-top: 50px;
+
+                .revenue_and_beyond_swiper_card {
+                    width: 50%;
+                    box-sizing: border-box;
+                    border-radius: 20px;
+                    position: relative;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    padding: 80px 5% 40px 3%;
+                    color: #575757;
+                    overflow: hidden;
+                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.288);
+
+                    .revenue_and_beyond_swiper_card_notation {
+                        position: absolute;
+                        padding: 10px 25px;
+                        font-size: 20px;
+                        font-weight: 500;
+                        background-color: #207de9;
+                        color: white;
+                        border-radius: 0 0 20px;
+                        left: 0;
+                        top: 0;
+                    }
+
+                    .revenue_and_beyond_swiper_card_top_sec {
+                        h4 {
+                            font-size: 20px;
+                            text-transform: uppercase;
+                        }
+
+                        p {
+                            font-size: 16px;
+                            padding: 10px 20px 30px 0;
+                        }
+
+                        .revenue_and_beyond_swiper_card_top_ul {
+                            list-style: none;
+
+                            li {
+                                padding: 7px 10px 7px 25px;
+                                position: relative;
+
+                                &::after {
+                                    position: absolute;
+                                    content: "";
+                                    height: 15px;
+                                    width: 15px;
+                                    background-image: url("/images/blue-tick.png");
+                                    background-position: center;
+                                    background-size: contain;
+                                    background-repeat: no-repeat;
+                                    left: 0;
+                                    top: 13px;
+                                }
+                            }
+                        }
+                    }
+
+                    .revenue_and_beyond_swiper_card_bottom_sec {
+                        padding-top: 50px;
+
+                        span {
+                            color: rgb(1, 226, 121);
+                            font-size: 30px;
+                            font-weight: 700;
+                        }
+
+                        p {
+                            font-size: 20px;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                        }
+
+                        a {
+                            padding-top: 20px;
+                            color: #207de9;
+                            font-size: 17px;
+                            font-weight: 700;
                         }
                     }
                 }
